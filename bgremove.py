@@ -1,9 +1,9 @@
-'s import streamlit as st
+import streamlit as st
 from rembg import remove
 from PIL import Image
 import io
 
-st.set_page_config(page_title="Background Remover", layout="centered")
+st.set_page_config(page_title="Dev's Background Remover", layout="centered")
 st.title("🖼️ Background Remover")
 st.write("Upload an image and download it with the background removed (PNG with transparency).")
 
