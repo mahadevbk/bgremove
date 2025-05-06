@@ -14,7 +14,7 @@ if uploaded_file:
     # Load the uploaded image
     image = Image.open(uploaded_file).convert("RGB")
     st.subheader("📷 Original Image")
-    st.image(image, use_column_width=True)
+    st.image(image, use_container_width=True)
 
     with st.spinner("Removing background..."):
         # Convert to bytes
@@ -27,7 +27,7 @@ if uploaded_file:
         output_image = Image.open(io.BytesIO(output_bytes)).convert("RGBA")
 
     st.subheader("🎯 Image with Background Removed")
-    st.image(output_image, use_column_width=True)
+    st.image(output_image, use_container_width=True)
 
     # Download button
     download_buffer = io.BytesIO()
