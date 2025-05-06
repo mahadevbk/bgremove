@@ -4,7 +4,7 @@ from PIL import Image
 import io
 
 st.set_page_config(page_title="Dev's Background Remover", layout="centered")
-st.title("🖼️ Background Remover")
+st.title("🖼️ Dev's Background Remover")
 st.write("Upload an image and tune the background removal settings for better results.")
 
 # Upload image
